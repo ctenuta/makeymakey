@@ -106,13 +106,13 @@ int prevTime = 0;
 int loopCounter = 0;
 
 
-///////////////////////////
-//UPDATE
-///////////////////////////
+/////////////////////////////
+//UPDATED BY CRISTIANO TENUTA
+/////////////////////////////
 int lastMouseClick = 0;
 int timeElapsed = 0;
 int outputMState = 0;
-///////////////////////////
+/////////////////////////////
 
 
 ///////////////////////////
@@ -703,9 +703,9 @@ void updateOutLEDs()
   }
 
                              
-  ///////////////////////////
-  //UPDATE
-  ///////////////////////////
+  /////////////////////////////
+  //UPDATED BY CRISTIANO TENUTA
+  /////////////////////////////
   if (mousePressed)
   {
     timeElapsed = millis() - lastMouseClick;
@@ -724,25 +724,27 @@ void updateOutLEDs()
     }       
     lastMouseClick = millis();
   }
-  ///////////////////////////
+  
+  //  else
+  //  {
+  //    //digitalWrite(outputM, LOW);
+  //    RXLED0;
+  //  }
+    
+  //  if (mousePressed)
+  //  {
+  //    digitalWrite(outputM, HIGH);
+  //    RXLED1;
+  //  }
+  //  else
+  //  {
+  //    digitalWrite(outputM, LOW);
+  //    RXLED0;
+  //  }
 
-  
-//  else
-//  {
-//    //digitalWrite(outputM, LOW);
-//    RXLED0;
-//  }
-  
-//  if (mousePressed)
-//  {
-//    digitalWrite(outputM, HIGH);
-//    RXLED1;
-//  }
-//  else
-//  {
-//    digitalWrite(outputM, LOW);
-//    RXLED0;
-//  }
+  /////////////////////////////
+
+
 }
 
 
